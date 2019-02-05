@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
-import Nav from './container/nav';
-import Aside from './container/aside';
-import Main from './container/main';
+import Nav from './nav';
+import Aside from './aside';
+import Main from './main';
+import Footer from '../components/footer';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div class='grid app'>
         <Nav/>
         <Aside/>
         <Main/>
+        <Footer/>
       </div>
     );
   }

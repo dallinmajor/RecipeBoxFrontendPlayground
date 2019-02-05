@@ -12,3 +12,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  height: 100%;
+  bottom: 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-template-rows:repeat(12, 1fr);
+  grid-gap: 1em;
+}
+
+.grid > nav {
+  grid-column:1/13;
+  background: #ddd;
+}
+
+.grid > aside {
+  grid-column: 1/5;
+  grid-row:2/12;
+  background: #eee;
+}
+
+.grid > main {
+  background: lightblue;
+  grid-column: 5/13;
+  grid-row: 2/12;
+}
+
+.grid > footer {
+  grid-column: 1/13;
+  background: pink;
+  height: 4em;
+}
